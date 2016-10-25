@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion":"2010-09-09",
-  "Description":"Stelligent CloudFormation Template for launching Jenkins on an EC2 instance ** This template creates one or more Amazon resources. You will be billed for the AWS resources used if you create a stack from this template.",
+  "Description":"CloudFormation Template for launching Jenkins on an EC2 instance ** This template creates one or more Amazon resources. You will be billed for the AWS resources used if you create a stack from this template.",
   "Parameters":{
     "Ec2Key":{
       "Type":"String",
@@ -31,10 +31,10 @@
       "Type":"String",
       "Description":"Path to config tarball in S3Bucket"
     },
-    "SshCidr":{
-      "Type":"String",
-      "Description":"Whitelisted network CIDR for inbound SSH",
-      "Default":"0.0.0.0/0"
+    "SshCidr": {
+      "Type": "String",
+      "Description": "Whitelisted network CIDR for inbound SSH",
+      "Default": "108.51.40.58/0"
     }
   },
   "Conditions":{
@@ -170,7 +170,7 @@
             "ami"
           ]
         },
-        "InstanceType":"m4.large",
+        "InstanceType":"t2.micro",
         "IamInstanceProfile":{
           "Ref":"InstanceProfile"
         },

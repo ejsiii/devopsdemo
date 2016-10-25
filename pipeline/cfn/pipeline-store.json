@@ -20,7 +20,7 @@
     "Branch":{
       "Type":"String",
       "Default":"EMPTY",
-      "Description":"Name of Dromedary Github branch"
+      "Description":"Name of Github branch"
     },
     "KeyName":{
       "Type":"String",

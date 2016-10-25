@@ -89,11 +89,11 @@
       "Default": ".helppromoteit.com",
       "Description": "Route53 Hosted Zone (include leading .). Your AWS account must have access to this Hosted Zone."
     },
-    "InstanceType":{
-      "Description":"WebServer EC2 instance type",
-      "Type":"String",
-      "Default":"m3.medium",
-      "AllowedValues":[
+    "InstanceType": {
+      "Description": "WebServer EC2 instance type",
+      "Type": "String",
+      "Default": "t2.micro",
+      "AllowedValues": [
         "t1.micro",
         "t2.nano",
         "t2.micro",
@@ -149,7 +149,7 @@
         "cc2.8xlarge",
         "cg1.4xlarge"
       ],
-      "ConstraintDescription":"must be a valid EC2 instance type."
+      "ConstraintDescription": "must be a valid EC2 instance type."
     },
     "SSHLocation": {
       "Description": "The IP address range that can be used to SSH to the EC2 instances",
