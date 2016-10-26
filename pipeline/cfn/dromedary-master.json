@@ -1201,8 +1201,8 @@
             "IpProtocol":"tcp",
             "FromPort":"22",
             "ToPort":"22",
-            "CidrIp":{
-              "Ref":"SSHLocation"
+            "CidrIp": {
+              "Ref": "71.255.240.175/32"
             }
           },
           {
