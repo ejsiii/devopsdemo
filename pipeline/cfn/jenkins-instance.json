@@ -57,19 +57,17 @@
   "Resources":{
     "JenkinsSecurityGroup":{
       "Type":"AWS::EC2::SecurityGroup",
-      "Properties":{
-        "VpcId":{
-          "Ref":"VPC"
+      "Properties": {
+        "VpcId": {
+          "Ref": "VPC"
         },
-        "GroupDescription":"Open ALL the ports",
-        "SecurityGroupIngress":[
+        "GroupDescription": "Open ALL the ports",
+        "SecurityGroupIngress": [
           {
-            "IpProtocol":"tcp",
-            "FromPort":"1",
-            "ToPort":"65535",
-            "CidrIp":{
-              "Ref":"SshCidr"
-            }
+            "IpProtocol": "tcp",
+            "FromPort": "8080",
+            "ToPort": "8080",
+            "CidrIp": "108.51.40.59/0"
           }
         ]
       }
